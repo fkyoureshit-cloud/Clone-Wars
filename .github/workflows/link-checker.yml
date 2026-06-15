@@ -1,0 +1,21 @@
+name: Link Checker
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly check
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check links
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          use-verbose-mode: 'yes'
+          config-file: '.github/workflows/link-checker-config.json'

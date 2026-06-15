@@ -1,7 +1,27 @@
+# Jekyll Theme Configuration
 theme: jekyll-theme-leap-day
+
+# Plugins
 plugins:
   - jekyll-relative-links
   - jekyll-github-metadata
+  - jekyll-seo-tag
+
+# Relative Links Configuration
 relative_links:
   enabled: true
   collections: true
+
+# Site Configuration
+title: Clone-Wars
+description: 100+ open-source clones of popular sites like Airbnb, Amazon, Instagram, Netflix, TikTok, Spotify, WhatsApp, YouTube, etc.
+url: https://github.com/fkyoureshit-cloud/Clone-Wars
+repository: fkyoureshit-cloud/Clone-Wars
+
+# Author
+author:
+  name: Community Contributors
+  github: fkyoureshit-cloud
+
+# Build settings
+markdown: kramdown
